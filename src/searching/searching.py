@@ -25,7 +25,7 @@ print(binary_search(arr1, -8, 0, len(arr1)-1))
 # sorted in ascending order or in descending order
 # You can implement this function either recursively 
 # or iteratively
-def agnostic_binary_search(arr, target):
-    # Your code here
-    pass
+# def agnostic_binary_search(arr, target):
+#     # Your code here
+#     pass
 

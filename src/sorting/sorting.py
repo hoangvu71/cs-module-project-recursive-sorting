@@ -42,14 +42,21 @@ def merge(arrA, arrB):
 
     return merged_arr
 
-print(merge([1],[2]))
-# # TO-DO: implement the Merge Sort function below recursively
-# def merge_sort(arr):
-#     # Your code here
-
-
-#     return arr
-
+# TO-DO: implement the Merge Sort function below recursively
+def merge_sort(arr):
+    # Your code here
+    if len(arr) == 0:
+        return arr
+    mid = len(arr) // 2
+    print(arr)
+    if len(arr) == 1:
+        return arr
+    elif len(arr) > 1:
+        right = merge_sort(arr[mid:])
+        left = merge_sort(arr[:mid])
+    if right != None and left != None:
+        return merge(left,right)
+print(merge_sort([9,8,7,6,5,4,3,2,1,10,11,12,13,14,15,16]))
 # # STRETCH: implement the recursive logic for merge sort in a way that doesn't 
 # # utilize any extra memory
 # # In other words, your implementation should not allocate any additional lists 
